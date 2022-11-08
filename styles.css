@@ -5,7 +5,6 @@
     --body-font: "Inter", sans-serif;
 }
 
-
 body {
     font-family: var(--body-font);
 }
@@ -74,7 +73,8 @@ hr {
 }
 
 .password-btn:hover, .password-btn:focus,
-.password:hover, .password:focus {
+.password:hover, .password:focus,
+.mode:hover, .mode:focus {
     cursor: pointer;
 }
 
@@ -89,10 +89,6 @@ hr {
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 }
 
-.mode:hover, .mode:focus {
-    cursor: pointer;
-}
-
 .mode-toggle {
     width: 30px;
     height: 100%;
@@ -100,15 +96,13 @@ hr {
     border-radius: 50%;
 }
 
-.left {
+.mode-toggle.left {
     margin-right: auto;
 }
 
-.right {
+.mode-toggle.right {
     margin-left: auto;
 }
-
-
 
 /* dark mode */
 

@@ -26,20 +26,8 @@ function generatePassword() {
 
         firstPassEl.textContent = firstPass
         secondPassEl.textContent = secondPass
-
-        console.log(randomIndexOne)
-        console.log(randomIndexTwo)
 }
 }
-
-// if ((modeToggleEl.style.marginRight = "auto") || 2+2 === 4) {
-//     modeToggleEl.style.marginRight = "0"
-//     modeToggleEl.style.marginLeft = "auto"
-//     console.log("randomIndexOne")
-// } else if (modeToggleEl.style.marginLeft === "auto") {
-//     modeToggleEl.style.marginLeft = "0"
-//     modeToggleEl.style.marginRight = "auto"
-// }
 
 modeEl.addEventListener("click", () => {
     if (modeToggleEl.classList.contains("left")) {
@@ -61,5 +49,7 @@ function copyToClipboard(text) {
 firstPassEl.addEventListener("click", () => {
     copyToClipboard(firstPassEl.textContent)
 })
-    
 
+secondPassEl.addEventListener("click", () => {
+    copyToClipboard(secondPassEl.textContent)
+})
