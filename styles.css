@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;800&display=swap');
+
+:root {
+    --heading-font: "Karla", sans-serif;
+    --body-font: "Inter", sans-serif;
+}
+
+
+body {
+    font-family: var(--body-font);
+}
+
+.container {
+    background-color: #ECFDF5;
+    min-width: 260px;
+    max-width: 550px;
+    margin: auto;
+    padding: 2.5%;
+    border: 1px solid #000;
+}
+
+.title {
+    color: #2B283A;
+    font-size: 40px;
+    font-family: var(--heading-font);
+    margin-bottom: 0;
+}
+
+.accent-text {
+    color: #10B981;
+}
+
+.sub-title {
+    color: #6B7280;   
+}
+
+.password-btn {
+    color: #fff;
+    background: #10B981;   
+    
+    width: 191px;
+    height: 42px;
+
+    margin-top: 25px;
+    padding: 9px 17px 9px 15px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.password {
+    color: #5DEF92;
+    background-color: #273549;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 211px;
+    height: 39px;
+    padding: 5px 10px;
+
+    border-radius: 6px;
+}
+
+.password-btn:hover, .password-btn:focus,
+.password:hover, .password:focus {
+    cursor: pointer;
+}
+
+
+.mode {
+    width: 60px;
+    height: 30px;
+    background-color: #000;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+.mode:hover, .mode:focus {
+    cursor: pointer;
+}
+
+.mode-toggle {
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.left {
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+
+
+/* dark mode */
+
+.container.dark {
+    background: #1F2937;
+}
+
+.dark > .title {
+    color: #fff;
+}
+
+.dark > .sub-title {
+    color: #D5D4D8;
+}
+
+.dark .accent-text {
+    color: #4ADF86;
+}
+
+
+@media (max-width: 500px) {
+    .password-container {
+        flex-direction: column;
+    }
+}
